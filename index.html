@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Com a MyListfy é menos tempo e mais lucro</title>
+  <meta name="description" content="Você está pronto para aumentar seus lucros na Amazon vendendo FBA ou FBM? A MyListfy traz diariamente os produtos para você escolher, listar e lucrar. Nossa lista simplifica tudo para você!">
+  
+  <!-- Google Fonts - Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Reset e Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #4fffbd;
+      --primary-light: #88ffff;
+      --primary-dark: #3fd9a0;
+      --secondary: #fff0df;
+      --text-dark: #333;
+      --text-light: #666;
+      --white: #fff;
+      --gradient: linear-gradient(to right, #4fffbd, #88ffff);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Tipografia */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient);
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .gradient-text {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: pulse 2s infinite;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 0.5rem 0;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 64px;
+      width: auto;
+    }
+
+    .main-nav {
+      display: none;
+    }
+
+    .main-nav a {
+      margin: 0 1rem;
+      color: var(--text-dark);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .main-nav a:hover {
+      color: var(--primary);
+    }
+
+    .cta-button {
+      background: var(--gradient);
+      color: var(--text-dark);
+      font-weight: 500;
+      padding: 0.5rem 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    .cta-button:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: scale(1.05);
+    }
+
+    .mobile-menu-button {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to bottom right, rgba(79, 255, 189, 0.15), rgba(136, 255, 255, 0.15));
+      padding: 5rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><rect width="500" height="500" fill="none"/></svg>');
+      opacity: 0.05;
+      z-index: 0;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-text {
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.125rem;
+      color: var(--text-light);
+      max-width: 32rem;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .primary-button {
+      background: var(--gradient);
+      color: var(--text-dark);
+      font-weight: 700;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      font-size: 1.125rem;
+    }
+
+    .primary-button:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: scale(1.05);
+    }
+
+    .secondary-button {
+      background: var(--white);
+      color: var(--text-dark);
+      font-weight: 500;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      font-size: 1.125rem;
+    }
+
+    .secondary-button:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-card {
+      background-color: var(--secondary);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transform: rotate(2deg);
+      transition: transform 0.5s;
+      z-index: 2;
+    }
+
+    .hero-card:hover {
+      transform: rotate(0) scale(1.05);
+    }
+
+    .exclusive-tag {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      background: var(--gradient);
+      color: var(--text-dark);
+      font-weight: 700;
+      padding: 0.25rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .benefits-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .benefits-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .check-icon {
+      background-color: var(--primary);
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 5rem 0;
+      background-color: var(--white);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 48rem;
+      margin: 0 auto 4rem;
+    }
+
+    .section-header p {
+      font-size: 1.125rem;
+      color: var(--text-light);
+      margin-top: 1rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background-color: var(--secondary);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: translateY(-8px);
+    }
+
+    .feature-icon {
+      background: var(--gradient);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover .feature-icon {
+      transform: scale(1.1);
+    }
+
+    .feature-icon i {
+      font-size: 1.5rem;
+      color: var(--text-dark);
+    }
+
+    .feature-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      color: var(--text-light);
+    }
+
+    /* Benefits Section */
+    .benefits {
+      padding: 5rem 0;
+      background: linear-gradient(to bottom right, rgba(79, 255, 189, 0.15), rgba(136, 255, 255, 0.15));
+    }
+
+    .benefits-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    .benefits-list-container {
+      order: 2;
+    }
+
+    .benefits-card {
+      order: 1;
+      background-color: var(--secondary);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: all 0.3s;
+    }
+
+    .benefits-card:hover {
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-8px);
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .benefit-icon {
+      background: var(--gradient);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-icon i {
+      font-size: 1.25rem;
+      color: var(--text-dark);
+    }
+
+    .benefit-step {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      transition: all 0.3s;
+    }
+
+    .benefit-step:hover {
+      transform: translateX(0.5rem);
+    }
+
+    .step-number {
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .benefit-step:nth-child(even) .step-number {
+      background-color: var(--primary-light);
+    }
+
+    .step-content h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Suppliers Section */
+    .suppliers {
+      padding: 5rem 0;
+      background: linear-gradient(to bottom right, rgba(79, 255, 189, 0.1), rgba(136, 255, 255, 0.1));
+    }
+
+    .suppliers-container {
+      background-color: white;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .suppliers-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient);
+    }
+
+    .suppliers-count {
+      background: linear-gradient(to right, rgba(79, 255, 189, 0.2), rgba(136, 255, 255, 0.2));
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .suppliers-count h3 {
+      font-size: 3rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .suppliers-logos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .supplier-logo {
+      background-color: white;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 150px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .supplier-logo:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: scale(1.05);
+    }
+
+    .supplier-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    /* List Details Section */
+    .list-details {
+      padding: 5rem 0;
+      background-color: white;
+    }
+
+    .list-details-container {
+      background-color: var(--secondary);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .list-details-header {
+      background: linear-gradient(to right, rgba(79, 255, 189, 0.2), rgba(136, 255, 255, 0.2));
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .list-details-toggle {
+      background-color: white;
+      border: none;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .list-details-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .list-details-content.active {
+      max-height: 2000px;
+    }
+
+    .list-items-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+
+    .list-item {
+      background-color: white;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: all 0.3s;
+    }
+
+    .list-item:hover {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+    }
+
+    .list-item-content {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+
+    .list-item-icon {
+      background: var(--gradient);
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .list-item-icon i {
+      color: white;
+      font-size: 1rem;
+    }
+
+    .list-item-text h4 {
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .list-item-text p {
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+    /* Unique Features Section */
+    .unique-features {
+      padding: 5rem 0;
+      background: linear-gradient(to bottom right, rgba(79, 255, 189, 0.15), rgba(136, 255, 255, 0.15));
+    }
+
+    .unique-features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .unique-feature-card {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+
+    .unique-feature-card:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: translateY(-8px);
+    }
+
+    .unique-feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient);
+    }
+
+    .unique-feature-icon {
+      background: linear-gradient(to right, rgba(79, 255, 189, 0.2), rgba(136, 255, 255, 0.2));
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .unique-feature-card:hover .unique-feature-icon {
+      transform: scale(1.1);
+    }
+
+    .unique-feature-icon i {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    /* Reviews Section */
+    .reviews {
+      padding: 5rem 0;
+      background-color: white;
+    }
+
+    .reviews-slider {
+      position: relative;
+    }
+
+    .reviews-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .review-card {
+      background-color: var(--secondary);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .review-header {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .review-avatar {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #e0e0e0;
+    }
+
+    .review-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .review-author h4 {
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .review-author p {
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+    .review-stars {
+      display: flex;
+      color: #ffc107;
+      margin-bottom: 0.5rem;
+    }
+
+    .review-content p {
+      color: var(--text-dark);
+    }
+
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .slider-prev {
+      left: -1rem;
+    }
+
+    .slider-next {
+      right: -1rem;
+    }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .slider-dot {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background-color: #e0e0e0;
+      margin: 0 0.25rem;
+      cursor: pointer;
+    }
+
+    .slider-dot.active {
+      background-color: var(--primary);
+    }
+
+    /* Pricing Section */
+    .pricing {
+      padding: 5rem 0;
+      background: linear-gradient(to bottom right, rgba(79, 255, 189, 0.15), rgba(136, 255, 255, 0.15));
+    }
+
+    .pricing-alert {
+      display: inline-block;
+      background-color: var(--secondary);
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: #b45309;
+      border: 2px solid #fbbf24;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: pulse 2s infinite;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .pricing-card {
+      background-color: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    .pricing-card:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: translateY(-8px);
+    }
+
+    .pricing-card.popular {
+      position: relative;
+      transform: scale(1.05);
+      z-index: 10;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .pricing-card.popular:hover {
+      transform: scale(1.05) translateY(-8px);
+    }
+
+    .pricing-card.popular::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient);
+    }
+
+    .popular-tag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 1rem;
+      text-transform: uppercase;
+      border-bottom-left-radius: 0.5rem;
+    }
+
+    .pricing-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-card.popular .pricing-header {
+      background: linear-gradient(to right, rgba(79, 255, 189, 0.2), rgba(136, 255, 255, 0.2));
+    }
+
+    .pricing-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .pricing-price {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-amount {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .pricing-period {
+      color: var(--text-light);
+    }
+
+    .pricing-description {
+      color: var(--text-light);
+    }
+
+    .pricing-features {
+      padding: 1.5rem;
+    }
+
+    .pricing-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .pricing-feature-icon {
+      color: var(--primary);
+      flex-shrink: 0;
+      margin-top: 0.125rem;
+    }
+
+    .pricing-card.popular .pricing-feature-icon {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .pricing-card.popular .pricing-feature-check {
+      background: var(--gradient);
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.75rem;
+    }
+
+    .pricing-cta {
+      display: block;
+      text-align: center;
+      padding: 0.75rem;
+      margin-top: 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .pricing-card:not(.popular) .pricing-cta {
+      background-color: white;
+      color: var(--text-dark);
+      border: 2px solid var(--primary);
+    }
+
+    .pricing-card:not(.popular) .pricing-cta:hover {
+      background-color: rgba(79, 255, 189, 0.1);
+    }
+
+    .pricing-card.popular .pricing-cta {
+      background: var(--gradient);
+      color: var(--text-dark);
+      font-weight: 700;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-card.popular .pricing-cta:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* FAQ Section */
+    .faq {
+      padding: 5rem 0;
+      background-color: white;
+    }
+
+    .faq-container {
+      background-color: var(--secondary);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    .faq-toggle {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .faq-toggle.active {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .faq-answer.active {
+      max-height: 500px;
+    }
+
+    .faq-answer-content {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* CTA Section */
+    .cta {
+      padding: 5rem 0;
+      background: var(--gradient);
+    }
+
+    .cta-content {
+      text-align: center;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-logo {
+      height: 4rem;
+      width: auto;
+      margin-bottom: 1rem;
+      filter: brightness(2);
+    }
+
+    .footer-column p {
+      color: #999;
+      margin-bottom: 1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icons a {
+      color: #999;
+      font-size: 1.25rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    .footer-column h4 {
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-column ul a {
+      color: #999;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul a:hover {
+      color: var(--primary);
+    }
+
+    .contact-info li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info i {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 2rem;
+      text-align: center;
+      color: #777;
+      font-size: 0.875rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .footer-links a {
+      color: #777;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    /* Animações */
+    @keyframes pulse {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Media Queries */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+      
+      .main-nav {
+        display: flex;
+      }
+      
+      .mobile-menu-button {
+        display: none;
+      }
+      
+      .hero-content {
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .hero-text {
+        text-align: left;
+        flex: 1;
+      }
+      
+      .hero-text p {
+        margin: 0 0 1.5rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .benefits-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .benefits-list-container {
+        order: 1;
+      }
+      
+      .benefits-card {
+        order: 2;
+      }
+      
+      .suppliers-logos {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .list-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .unique-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .reviews-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .cta-buttons {
+        flex-direction: row;
+      }
+      
+      .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .list-items-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .unique-features-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .suppliers-logos {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="MyListfy Logo">
+      </div>
+      <nav class="main-nav">
+        <a href="#features">Recursos</a>
+        <a href="#benefits">Benefícios</a>
+        <a href="#suppliers">Fornecedores</a>
+        <a href="#unique-features">Diferenciais</a>
+        <a href="#reviews">Depoimentos</a>
+        <a href="#pricing">Preços</a>
+      </nav>
+      <a href="#pricing" class="cta-button">Assinar Agora</a>
+      <button class="mobile-menu-button" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Com a MyListfy é <span class="gradient-text">Menos Tempo e Mais Lucro</span></h1>
+          <p>Lista diária de produtos lucrativos para Online Arbitrage (FBA e FBM) para vendedores na Amazon US. Simplificada para você escolher, listar e lucrar!</p>
+          <div class="hero-buttons">
+            <a href="#pricing" class="primary-button">Começar Agora</a>
+            <a href="#features" class="secondary-button">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="exclusive-tag">Exclusivo</div>
+          <h3>O que você recebe:</h3>
+          <ul class="benefits-list">
+            <li>
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <div><span class="bold">Lista diária</span> com produtos lucrativos</div>
+            </li>
+            <li>
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <div><span class="bold">$12 de lucro médio</span> por produto</div>
+            </li>
+            <li>
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <div><span class="bold">Até 75% de ROI</span> médio</div>
+            </li>
+            <li>
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <div><span class="bold">100 vendas mensais</span> em média</div>
+            </li>
+            <li>
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <div><span class="bold">Calculadora exclusiva</span> semelhante ao ASINZEN</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Por que escolher a MyListfy?</h2>
+        <p>Economize tempo e dinheiro com nossa lista de produtos lucrativos para vender na Amazon dos EUA.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <h3>Economia com Virtual Assistants</h3>
+          <p>Economize até $500 por mês em assistentes virtuais. Nossa lista substitui a necessidade de contratar VAs para pesquisa de produtos.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Alto ROI</h3>
+          <p>Até 75% de ROI médio com nossos produtos, maximizando seu investimento e aumentando seus lucros.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Vendas Consistentes</h3>
+          <p>Produtos com média de 100 vendas mensais e mínimo de 10 vendas, garantindo giro rápido do seu estoque.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>Pesquisa Avançada</h3>
+          <p>Nossa equipe utiliza ferramentas avançadas para encontrar os melhores produtos, eliminando a necessidade de softwares caros.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Economia de Tempo</h3>
+          <p>Economize horas diárias que seriam gastas com pesquisa de produtos ou gerenciando assistentes virtuais.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Lucro Garantido</h3>
+          <p>Produtos com lucro médio de $12 e mínimo de $5, cuidadosamente selecionados pela nossa equipe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2>Benefícios da MyListfy</h2>
+        <p>Descubra como nossa lista de produtos pode transformar seu negócio na Amazon.</p>
+      </div>
+
+      <div class="benefits-container">
+        <div class="benefits-list-container">
+          <div class="benefit-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Reduza seus custos operacionais</h3>
+              <p>Economize com softwares caros e assistentes virtuais. Nossa lista substitui a necessidade de múltiplas ferramentas e funcionários.</p>
+            </div>
+          </div>
+
+          <div class="benefit-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Aumente sua eficiência</h3>
+              <p>Receba produtos pré-selecionados diariamente, permitindo que você foque apenas em comprar e vender, sem perder tempo com pesquisas.</p>
+            </div>
+          </div>
+
+          <div class="benefit-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Maximize seus lucros</h3>
+              <p>Com produtos de alto ROI e vendas consistentes, você maximiza seus lucros e aumenta o giro do seu capital.</p>
+            </div>
+          </div>
+
+          <div class="benefit-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Escale seu negócio</h3>
+              <p>Com produtos confiáveis e consistentes, você pode escalar seu negócio na Amazon de forma segura e previsível.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-card">
+          <div class="benefit-item">
+            <div>
+              <h4 class="text-2xl font-bold">$12</h4>
+              <p>O lucro médio dos leads na lista MyListfy é de até $12. O mínimo é $5.</p>
+            </div>
+            <div class="benefit-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div>
+              <h4 class="text-2xl font-bold">75% ROI</h4>
+              <p>Terá até 75% de ROI médio com nossos produtos.</p>
+            </div>
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div>
+              <h4 class="text-2xl font-bold">Média de 100 Vendas mensais</h4>
+              <p>Os produtos realizam em média 100 vendas mensais, com um mínimo de 10 vendas.</p>
+            </div>
+            <div class="benefit-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Suppliers Section -->
+  <section id="suppliers" class="suppliers">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mais de 1200 Fornecedores</h2>
+        <p>Trabalhamos com os maiores e mais confiáveis fornecedores do mercado para garantir os melhores produtos para você.</p>
+      </div>
+
+      <div class="suppliers-container">
+        <div class="suppliers-count">
+          <h3>1200+</h3>
+          <p>Fornecedores disponíveis para maximizar suas oportunidades</p>
+        </div>
+
+        <div class="suppliers-logos">
+          <!-- Walmart -->
+          <div class="supplier-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png" alt="Walmart">
+          </div>
+
+          <!-- Target -->
+          <div class="supplier-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Target_Corporation_logo_%28vector%29.svg/1200px-Target_Corporation_logo_%28vector%29.svg.png" alt="Target">
+          </div>
+
+          <!-- Vitacost -->
+          <div class="supplier-logo">
+            <img src="https://www.jasedlak.com/wp-content/uploads/2022/01/logo-vitacost-success-story-480x220.png" alt="Vitacost">
+          </div>
+
+          <!-- PerfumesClub -->
+          <div class="supplier-logo">
+            <img src="https://play-lh.googleusercontent.com/b5GlbArQ7sJNE4W9WvLmci8DsCHmXYn9rJw3zJxuKus5UT1L5QIlkUyjBA8_F7YBVw" alt="PerfumesClub">
+          </div>
+
+          <!-- ToyShnip -->
+          <div class="supplier-logo">
+            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHSfbV875VELg/company-logo_200_200/company-logo_200_200/0/1630621249700/toyshnip_logo?e=2147483647&v=beta&t=dsc-gE5l7kFAwwsBAWja-VXXDV9ZKnkrhHIXdiJxX4Y" alt="ToyShnip">
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <p>E muitos outros fornecedores confiáveis para diversificar seu inventário e maximizar seus lucros.</p>
+          <div class="mt-6 inline-block bg-[#fff0df] px-6 py-3 rounded-full text-sm font-bold border border-amber-200">
+            <span class="text-amber-700">Acesso a todos os fornecedores com qualquer plano de assinatura!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Planos de Assinatura</h2>
+        <p>Escolha o plano ideal para o seu negócio e comece a receber produtos lucrativos diariamente.</p>
+        <div class="pricing-alert">⚠️ Máximo de 20 clientes por lista - Vagas limitadas!</div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plano Mensal -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Plano Mensal</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount">$64,99</span>
+              <span class="pricing-period">/mês</span>
+            </div>
+            <p class="pricing-description">Ideal para quem quer testar o serviço.</p>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Lista diária de produtos lucrativos</span>
+            </div>
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Lucro médio de $12 por produto</span>
+            </div>
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Até 75% de ROI médio</span>
+            </div>
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Suporte por e-mail</span>
+            </div>
+            <a href="#" class="pricing-cta">Assinar Agora</a>
+          </div>
+        </div>
+
+        <!-- Plano Anual -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Mais Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Plano Anual</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount">$38,97</span>
+              <span class="pricing-period">/mês</span>
+            </div>
+            <p class="pricing-description">Economize 41% em relação ao plano mensal.</p>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <div class="pricing-feature-check"><i class="fas fa-check"></i></div>
+              <span>Lista diária de produtos lucrativos</span>
+            </div>
+            <div class="pricing-feature">
+              <div class="pricing-feature-check"><i class="fas fa-check"></i></div>
+              <span>Lucro médio de $12 por produto</span>
+            </div>
+            <div class="pricing-feature">
+              <div class="pricing-feature-check"><i class="fas fa-check"></i></div>
+              <span>Até 75% de ROI médio</span>
+            </div>
+            <div class="pricing-feature">
+              <div class="pricing-feature-check"><i class="fas fa-check"></i></div>
+              <span>Suporte VIP</span>
+            </div>
+            <div class="pricing-feature">
+              <div class="pricing-feature-check"><i class="fas fa-check"></i></div>
+              <span>Acesso as listas de dias anteriores</span>
+            </div>
+            <div class="pricing-feature">
+              <div class="pricing-feature-check"><i class="fas fa-check"></i></div>
+              <span>
+                <span class="font-bold text-amber-700">Calculadora exclusiva semelhante ao ASINZEN</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-0.5 rounded">
+                  Economia de $12/mês
+                </span>
+              </span>
+            </div>
+            <a href="#" class="pricing-cta">Assinar Agora</a>
+          </div>
+        </div>
+
+        <!-- Plano Semestral -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Plano Semestral</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount">$53,99</span>
+              <span class="pricing-period">/mês</span>
+            </div>
+            <p class="pricing-description">Economize 23% em relação ao plano mensal.</p>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Lista diária de produtos lucrativos</span>
+            </div>
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Lucro médio de $12 por produto</span>
+            </div>
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Até 75% de ROI médio</span>
+            </div>
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Suporte prioritário</span>
+            </div>
+            <div class="pricing-feature">
+              <i class="fas fa-check pricing-feature-icon"></i>
+              <span>Acesso as listas de dias anteriores</span>
+            </div>
+            <a href="#" class="pricing-cta">Assinar Agora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Perguntas Frequentes</h2>
+        <p>Tire suas dúvidas sobre a MyListfy e nossos serviços.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como funciona a lista de produtos da MyListfy?</span>
+            <div class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Chegará por e-mail o arquivo em excel todos os dias com todos os produtos analisados, só será necessário comprar no fornecedor e enviar para o seu prep center. Cada produto vem com todas as informações necessárias para você tomar a decisão de compra, incluindo preço de compra, preço de venda, lucro estimado, ROI e histórico de vendas.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Qual é o lucro médio dos produtos na lista?</span>
+            <div class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Os produtos na nossa lista têm um lucro médio de $12, com um mínimo garantido de $5 por produto. O ROI médio é de até 75%, garantindo um excelente retorno sobre seu investimento.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quantos produtos são enviados diariamente?</span>
+            <div class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Enviamos entre 10 a 15 produtos lucrativos diariamente, de segunda a sexta-feira. Todos os produtos são cuidadosamente selecionados pela nossa equipe para garantir qualidade e lucratividade.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Preciso ter experiência vendendo na Amazon?</span>
+            <div class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Não é necessário ter experiência prévia, mas é recomendado que você tenha conhecimentos básicos sobre como vender na Amazon dos EUA. Oferecemos suporte para ajudar iniciantes a entenderem como aproveitar ao máximo nossa lista.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Os produtos funcionam tanto para FBA quanto para FBM?</span>
+            <div class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Sim, nossa lista inclui produtos que funcionam bem tanto para o modelo FBA (Fulfillment by Amazon) quanto para o FBM (Fulfillment by Merchant), permitindo que você escolha a estratégia que melhor se adapta ao seu negócio.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como posso confiar na MyListfy?</span>
+            <div class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              A MyListfy trabalha desde 2023 fornecendo listas com os melhores produtos (deals) do mercado. Nossa equipe tem vasta experiência em Online Arbitrage na Amazon e seleciona cuidadosamente cada produto para garantir a melhor qualidade e lucratividade para nossos clientes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <p>Ainda tem dúvidas? <a href="#" class="text-[#4fffbd] font-medium hover:underline">Entre em contato conosco</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Pronto para aumentar seus lucros na Amazon?</h2>
+        <p class="text-xl mb-8 text-gray-700">Junte-se a centenas de vendedores brasileiros que estão transformando seus negócios com a MyListfy.</p>
+        <div class="cta-buttons">
+          <a href="#pricing" class="primary-button bg-gray-800 text-white">Começar Agora</a>
+          <a href="#" class="secondary-button">Falar com um Consultor</a>
+        </div>
+        <p class="mt-6 text-sm text-gray-700">Assine e comece hoje mesmo a lucrar com a nossa lista!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <img src="logo.png" alt="MyListfy Logo" class="footer-logo">
+          <p>Lista de produtos lucrativos para vendedores brasileiros na Amazon dos EUA.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/mylistfy" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#features">Recursos</a></li>
+            <li><a href="#benefits">Benefícios</a></li>
+            <li><a href="#pricing">Preços</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Área do Cliente</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contato</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>contato@mylistfy.com</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+1 (365) 892-5670</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> MyListfy. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="#">Termos de Uso</a>
+          <a href="#">Política de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Atualizar o ano atual no footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Menu mobile toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mainNav = document.querySelector('.main-nav');
+    
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+        
+        // Alternar ícone
+        const icon = mobileMenuButton.querySelector('i');
+        if (icon.classList.contains('fa-bars')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        } else {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+    }
+    
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', function() {
+        // Toggle active class on question
+        const toggle = this.querySelector('.faq-toggle');
+        toggle.classList.toggle('active');
+        
+        // Toggle icon
+        const icon = toggle.querySelector('i');
+        if (icon.classList.contains('fa-chevron-down')) {
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        } else {
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        }
+        
+        // Toggle active class on answer
+        const answer = this.nextElementSibling;
+        answer.classList.toggle('active');
+        
+        // Close other open FAQs
+        faqQuestions.forEach(otherQuestion => {
+          if (otherQuestion !== question) {
+            const otherToggle = otherQuestion.querySelector('.faq-toggle');
+            otherToggle.classList.remove('active');
+            
+            const otherIcon = otherToggle.querySelector('i');
+            otherIcon.classList.remove('fa-chevron-up');
+            otherIcon.classList.add('fa-chevron-down');
+            
+            otherQuestion.nextElementSibling.classList.remove('active');
+          }
+        });
+      });
+    });
+    
+    // Ativar o primeiro FAQ por padrão
+    if (faqQuestions.length > 0) {
+      const firstToggle = faqQuestions[0].querySelector('.faq-toggle');
+      firstToggle.classList.add('active');
+      
+      const firstIcon = firstToggle.querySelector('i');
+      firstIcon.classList.remove('fa-chevron-down');
+      firstIcon.classList.add('fa-chevron-up');
+      
+      faqQuestions[0].nextElementSibling.classList.add('active');
+    }
+    
+    // List Details Toggle
+    const listDetailsToggle = document.querySelector('.list-details-toggle');
+    const listDetailsContent = document.querySelector('.list-details-content');
+    
+    if (listDetailsToggle && listDetailsContent) {
+      listDetailsToggle.addEventListener('click', function() {
+        listDetailsContent.classList.toggle('active');
+        
+        const icon = this.querySelector('i');
+        if (icon.classList.contains('fa-chevron-down')) {
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+        } else {
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        }
+      });
+    }
+    
+    // Smooth scroll para links de navegação
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const headerHeight = document.querySelector('.header').offsetHeight;
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+          
+          // Fechar menu mobile se estiver aberto
+          if (mainNav.classList.contains('active')) {
+            mainNav.classList.remove('active');
+            mobileMenuButton.querySelector('i').classList.remove('fa-times');
+            mobileMenuButton.querySelector('i').classList.add('fa-bars');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
